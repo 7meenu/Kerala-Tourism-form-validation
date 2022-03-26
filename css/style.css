@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    margin: 10px;
+    height: 10em;
+
+}
+header{
+    background-color: azure;
+    height:  8em;
+}
+.head-tag{
+    float:right;
+    margin-top:50px;
+    
+    margin-right: 50px;
+}
+.head-tag a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color:black ;
+    border:1px solid black;
+    padding: 10px;
+}
+.head-tag a:hover{
+    background-color:teal ;
+    color:white;
+}
+.carousel-item img{
+    
+
+    height: 200%;
+    width:300%;
+
+}
+.carousel-caption h1{
+    margin-bottom: 20%;
+    margin-top:50%;
+    color:beige;
+    font-family:cursive;
+    font-size:100px;
+
+}
+.carousel-caption p{
+margin-bottom: 25%; 
+color:aqua;   
+font-family:cursive;
+font-size: 30px;
+font-style: italic;
+padding: 5px;
+}
+
+.login-tag{
+   
+    padding:10px;
+    
+   border:2px solid;
+    background: whitesmoke;
+
+}
+
+.head-tag1{
+    float:right;
+    margin-top:50px;
+    
+    margin-right: 50px;
+
+}
+
+.head-tag1 a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color:white ;
+    border:1px solid black;
+    
+    padding: 10px;
+}
+.head-tag1 a:hover{
+    background-color:teal ;
+    color:white;
+}
+.container{
+    border:2px solid;
+    background-color:whitesmoke;
+}
+.card{
+    margin: 50px;
+    padding: 20px;
+    align-items: center;
+
+}
+.kasargodhead{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 500%;
+    font-style: italic;
+    color:wheat;
+}
+.paragraphcolor{
+    color:bisque;
+    padding:10px;
+    margin:10px;
+}
+.touristspotkasar{
+    color:burlywood;
+    margin:10px;
+    padding:10px;
+}
+
+.kannurhead{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 500%;
+    font-style: italic;
+    color:wheat;
+}
+.paragraphcolorkannur{
+    color:bisque;
+    padding:10px;
+    margin:10px;
+}
+.touristspotkannur{
+    color:burlywood;
+    margin:10px;
+    padding:10px;
+}
+
+.wayanadhead{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 500%;
+    font-style: italic;
+    color:wheat;
+}
+.paragraphcolorwayanad{
+    color:bisque;
+    padding:10px;
+    margin:10px;
+}
+.touristspotwayanad{
+    color:burlywood;
+    margin:10px;
+    padding:10px;
+}
+
+
+.kozhikodehead{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 500%;
+    font-style: italic;
+    color:wheat;
+}
+.paragraphcolorkozhikode{
+    color:bisque;
+    padding:10px;
+    margin:10px;
+}
+.touristspotkozhikode{
+    color:burlywood;
+    margin:10px;
+    padding:10px;
+}
+
+.malappuramhead{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 500%;
+    font-style: italic;
+    color:wheat;
+}
+.paragraphcolormalappuram{
+    color:bisque;
+    padding:10px;
+    margin:10px;
+}
+.touristspotmalappuram{
+    color:burlywood;
+    margin:10px;
+    padding:10px;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+</head>
+<body background="./images/1301247.webp">
+    <div>
+        <header1>
+    <div class="head-tag1">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="district.html">Explore</a>
+
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+    </div>
+</header1>
+</div>
+<br>
+<br><br>
+<br>
+
+<div class="container">
+  <h1>Sign Up</h1>
+    <form class="row g-3" action="#" onsubmit=" validate()">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="text" class="form-control" id="email" required>
+        </div>
+        <label for="error" id="error"></label>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" required>
+        </div>
+        <label for="error1" id="error1"></label>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="">
+        </div>
+        <div class="col-12">
+          <label for="inputPhone" class="form-label">Phone Number</label>
+          <input type="text" class="form-control" id="phone" placeholder=""required>
+        </div>
+        <label for="error2" id="error2"></label>
+        <br>
+        
+        <!-- <div class="col-md-6">
+          <label for="inputCity" class="form-label">City</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">State</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>...</option>
+          </select>
+        </div> -->
+        <!-- <div class="col-md-2">
+          <label for="inputZip" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="col-12">
+          
+        </div> -->
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+      </form>
+      <script>
+        let email = document.getElementById("email");
+let error = document.getElementById("error");
+
+let password = document.getElementById("password");
+let error1 = document.getElementById("error1");
+let phone=document.getElementById("phone");
+let error2=document.getElementById("error2");
+
+function validate() {
+    //let regex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=\\S+$).{8,}/;
+    let regex = /^(?=.*[0-9])(?=.*[A-Z])[a-zA-Z0-9]{8,}$/;
+    let regexp = /^([A-Za-z0-9\.-]+)@([A-Za-z0-9\-]+).([a-z]{2,3})(.[a-z]{2,3})?$/;
+    let regexphone=/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+    var isValidPhone=false;
+    var isValidEmail = false;
+    var isValidPassword = false;
+    if (regexp.test(email.value)) {
+        error.innerHTML = "valid Email";
+        error.style.color = "blue";
+        isValidEmail = true;
+        //return true;
+    }
+    else {
+        error.innerHTML = "invalid Email";
+        error.style.color = "red";
+        isValidEmail = false;
+        //return false;
+    }
+    if (regex.test(password.value)) {
+        error1.innerHTML = "valid Password";
+        error1.style.color = "blue";
+        isValidPassword = true;
+        //return true;
+
+    }
+    else {
+
+        error1.innerHTML = "invalid Password";
+        error1.style.color = "red";
+        isValidPassword = false;
+        //return false;
+    }
+    if (regexphone.test(phone.value)) {
+        error2.innerHTML = "valid phone number";
+        error2.style.color = "blue";
+        isValidPhone = true;
+        //return true;
+    }
+    else {
+        error2.innerHTML = "invalid phone number";
+        error2.style.color = "red";
+        isValidPhone = false;
+        //return false;
+    }
+    if (isValidEmail && isValidPassword && isValidPhone)
+        return true;
+    else
+        return false;
+
+}
+      </script>
+</div>
+    
+</body>
+</html>
